@@ -1,14 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import App from '../App.vue'
+import TinyVue from '../components/tinyVue.vue'
 import NextSdks from '../components/nextSdks.vue'
 import TinyRobot from '../components/tinyRobot.vue'
 import AiExtension from '../components/aiExtension.vue'
 
 const routes = [
-  {
+    {
     path: '/',
     name: 'Home',
-    component: App
+    component: TinyVue
+  },
+  {
+    path: '/tiny-vue',
+    name: 'TinyVue',
+    component: TinyVue
   },
   {
     path: '/next-sdks',
@@ -28,8 +33,8 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes
+  history: createWebHistory('/gimini-demo/'),
+  routes,
 })
 
 export default router
