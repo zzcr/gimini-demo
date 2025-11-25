@@ -175,6 +175,7 @@
   z-index: 1;
   max-width: 1000px;
   padding: 20px;
+  padding-top: 0;
   animation: fadeInUp 1s ease-out;
 }
 
@@ -182,6 +183,7 @@
   font-size: 5.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
+  margin-top: -120px;
   letter-spacing: -2px;
   background: linear-gradient(120deg, #333 30%, #5e7ce2 100%);
   -webkit-background-clip: text;

@@ -5,9 +5,9 @@
   <div class="container">
     <header class="hero section">
       <div class="hero-content">
-        <h1 class="title">TinyVue 4.0</h1>
+        <h1 class="title">OpenTiny Vue</h1>
         <p class="subtitle">
-          企业级 Vue 3 组件库<br>
+          企业级 Vue 组件库<br>
           轻量、高性能、智能化
         </p>
         <div class="cta-group">
@@ -225,6 +225,7 @@
   z-index: 1;
   max-width: 1000px;
   padding: 20px;
+  padding-top: 0;
   animation: fadeInUp 1s ease-out;
 }
 
@@ -232,6 +233,7 @@
   font-size: 5.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
+  margin-top: -120px;
   letter-spacing: -2px;
   background: linear-gradient(120deg, #333 30%, #5e7ce2 100%);
   -webkit-background-clip: text;
