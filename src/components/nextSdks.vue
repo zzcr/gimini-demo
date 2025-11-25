@@ -109,7 +109,7 @@
 <style scoped>
 .container {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 60px);
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
