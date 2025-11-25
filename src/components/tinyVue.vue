@@ -79,7 +79,7 @@
           </p>
         </div>
         <div class="feature-visual">
-          <img src="/src/assets/illustration_compatibility.png" alt="主题定制" class="floating-img delay-3" />
+          <img src="/src/assets/tinyvue_theme_customization.png" alt="主题定制" class="floating-img delay-3" />
         </div>
       </div>
     </section>
