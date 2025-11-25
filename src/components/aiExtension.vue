@@ -15,16 +15,134 @@
           <a href="/src/ai-extension-install.md" target="_blank" class="btn secondary">安装指南</a>
         </div>
       </div>
-      <div class="scroll-indicator">
-        <span>↓</span>
-      </div>
     </header>
 
+    <!-- Highlights Grid Section -->
+    <section class="highlights-section">
+      <div class="section-container">
+        <h2 class="section-title text-center">核心亮点</h2>
+        <div class="highlights-grid">
+          <!-- Global SVG Defs for 3D effects -->
+          <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#5e7ce2" />
+                <stop offset="100%" style="stop-color:#333" />
+              </linearGradient>
+              <linearGradient id="grad-highlight" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#8ca6ff" />
+                <stop offset="100%" style="stop-color:#5e7ce2" />
+              </linearGradient>
+              <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+                <feOffset dx="2" dy="4" result="offsetblur"/>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.3"/>
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+          </svg>
+
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#drop-shadow)">
+                <path d="M24 4L10 18H22L20 44L38 20H24L24 4Z" fill="url(#grad-highlight)" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M24 4L38 20H24L20 44" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>专属 MCP 工具快速定义</h3>
+            <p>可快速创建属于你域名的 MCP 工具，无需关注 Server 定义或 Transport 连接，支持接口调用与 DOM 操作。</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#drop-shadow)">
+                <path d="M26 6L6 26H20V42L40 22H26V6Z" fill="url(#grad-highlight)" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>极低改造成本</h3>
+            <p>无需改动现有应用，通过插件中的 mcp-servers 工具即可快速实现应用智能化。</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#drop-shadow)">
+                <circle cx="24" cy="24" r="16" fill="url(#grad-highlight)" stroke="white" stroke-width="2"/>
+                <path d="M24 14V24L30 30" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="24" cy="24" r="6" fill="rgba(255,255,255,0.3)"/>
+              </svg>
+            </div>
+            <h3>灵活的执行环境配置</h3>
+            <p>通过 meta.ts 定义运行环境，支持主世界（访问页面 JS）或 Content Script 环境。</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#drop-shadow)">
+                <rect x="8" y="20" width="16" height="16" rx="4" fill="url(#grad-highlight)" stroke="white" stroke-width="2"/>
+                <rect x="24" y="12" width="16" height="16" rx="4" fill="rgba(94, 124, 226, 0.5)" stroke="white" stroke-width="2"/>
+                <path d="M16 28L32 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>多域名工具协同</h3>
+            <p>支持组合多个域名的工具协同完成任务，自动打开对应页面，提升操作效率。</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#drop-shadow)">
+                <path d="M24 10C14 10 8 16 8 24C8 32 14 38 24 38C34 38 40 32 40 24C40 16 34 10 24 10Z" fill="url(#grad-highlight)" stroke="white" stroke-width="2"/>
+                <path d="M16 22C16 22 18 20 24 20C30 20 32 22 32 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="18" cy="28" r="2" fill="white"/>
+                <circle cx="30" cy="28" r="2" fill="white"/>
+              </svg>
+            </div>
+            <h3>内置智能功能</h3>
+            <p>类比 Chrome DevTools MCP，自动识别网页无障碍信息并规划路径，开箱即用。</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#drop-shadow)">
+                <rect x="6" y="14" width="36" height="20" rx="6" fill="url(#grad-highlight)" stroke="white" stroke-width="2"/>
+                <circle cx="16" cy="24" r="4" fill="rgba(255,255,255,0.4)"/>
+                <circle cx="32" cy="22" r="2" fill="white"/>
+                <circle cx="36" cy="26" r="2" fill="white"/>
+              </svg>
+            </div>
+            <h3>远程操控支持</h3>
+            <p>支持远程控制，通过识别码或链接在 codeMate、Cursor 等智能体中跨设备协同。</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#drop-shadow)">
+                <path d="M40 12H8C5.79 12 4 13.79 4 16V32C4 34.21 5.79 36 8 36H40C42.21 36 44 34.21 44 32V16C44 13.79 42.21 12 40 12Z" fill="url(#grad-highlight)" stroke="white" stroke-width="2"/>
+                <path d="M12 24H36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="24" r="2" fill="white"/>
+                <circle cx="24" cy="24" r="2" fill="white"/>
+                <circle cx="36" cy="24" r="2" fill="white"/>
+              </svg>
+            </div>
+            <h3>极速与 AI 互动反馈</h3>
+            <p>集成生成式 UI，可快速将必要信息反馈给 AI，提升协作效率。</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#drop-shadow)">
+                <path d="M35 19C35 12.9249 30.0751 8 24 8C18.8687 8 14.5671 11.5222 13.3321 16.2849C9.76124 16.8926 7 20.0631 7 24C7 28.4183 10.5817 32 15 32H33C37.4183 32 41 28.4183 41 24C41 21.3654 39.7282 19.0253 37.7477 17.5765" fill="url(#grad-highlight)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>快速接入云端工具</h3>
+            <p>可集成云端 MCP 能力与 Web 端 MCP 工具，协同完成复杂需求。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Feature 1: MCP 工具集成 -->
-    <section class="feature-section section bg-tech-1">
+    <section class="feature-section bg-tech-1">
       <div class="feature-content">
         <div class="feature-text">
-          <h2 class="section-title light">MCP 工具集成</h2>
+          <h2 class="section-title">MCP 工具集成</h2>
           <p class="feature-desc">
             基于 Model Context Protocol 实现工具调用。<br>
             为特定网站注册自定义 MCP 工具。<br>
@@ -32,16 +150,16 @@
           </p>
         </div>
         <div class="feature-visual">
-          <img src="/src/assets/aiext_mcp_tools.png" alt="MCP 工具" class="floating-img" />
+          <img src="/src/assets/aiext_mcp_tools_new.png" alt="MCP 工具" class="floating-img" />
         </div>
       </div>
     </section>
 
     <!-- Feature 2: User Scripts API -->
-    <section class="feature-section section bg-tech-2 reverse">
+    <section class="feature-section bg-tech-2 reverse">
       <div class="feature-content">
         <div class="feature-text">
-          <h2 class="section-title light">User Scripts API</h2>
+          <h2 class="section-title">User Scripts API</h2>
           <p class="feature-desc">
             支持 Chrome 120+ 的 User Scripts API。<br>
             在页面主世界（Main World）中执行脚本。<br>
@@ -49,16 +167,16 @@
           </p>
         </div>
         <div class="feature-visual">
-          <img src="/src/assets/aiext_userscripts.png" alt="User Scripts" class="floating-img delay-1" />
+          <img src="/src/assets/aiext_userscripts_new.png" alt="User Scripts" class="floating-img delay-1" />
         </div>
       </div>
     </section>
 
     <!-- Feature 3: 简单易用 -->
-    <section class="feature-section section bg-tech-1">
+    <section class="feature-section bg-tech-1">
       <div class="feature-content">
         <div class="feature-text">
-          <h2 class="section-title light">简单易用</h2>
+          <h2 class="section-title">简单易用</h2>
           <p class="feature-desc">
             下载 ZIP 文件即可本地安装。<br>
             无需通过浏览器插件市场。<br>
@@ -66,16 +184,16 @@
           </p>
         </div>
         <div class="feature-visual">
-          <img src="/src/assets/aiext_install.png" alt="简单安装" class="floating-img delay-2" />
+          <img src="/src/assets/aiext_install_new.png" alt="简单安装" class="floating-img delay-2" />
         </div>
       </div>
     </section>
 
     <!-- Feature 4: 工具开发 -->
-    <section class="feature-section section bg-tech-2 reverse">
+    <section class="feature-section bg-tech-2 reverse">
       <div class="feature-content">
         <div class="feature-text">
-          <h2 class="section-title light">灵活的工具开发</h2>
+          <h2 class="section-title">灵活的工具开发</h2>
           <p class="feature-desc">
             支持 pageMcpServer 和 contentScriptMcpServer 两种类型。<br>
             使用 Zod 定义参数验证规则。<br>
@@ -83,13 +201,13 @@
           </p>
         </div>
         <div class="feature-visual">
-          <img src="/src/assets/aiext_development.png" alt="工具开发" class="floating-img delay-3" />
+          <img src="/src/assets/aiext_development_new.png" alt="工具开发" class="floating-img delay-3" />
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <section class="footer-section section">
+    <section class="footer-section">
        <div class="footer-content">
          <h2>准备好让浏览器更智能了吗？</h2>
          <p>立即下载并安装 AI Extension</p>
@@ -108,67 +226,40 @@
 <style scoped>
 .container {
   width: 100%;
-  height: calc(100vh - 60px);
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  height: 100%;
+  overflow-y: auto;
   background-color: var(--bg-color);
+  scroll-behavior: smooth;
 }
 
-.section {
-  height: 100vh;
-  width: 100%;
-  scroll-snap-align: start;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-/* Backgrounds - Reusing App.vue assets */
+/* Hero Section */
 .hero {
+  height: 80vh; /* Not full screen */
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url('/src/assets/hero_bg_white.png');
   background-size: cover;
   background-position: center;
-  color: var(--text-primary);
+  position: relative;
   text-align: center;
 }
 
-.bg-tech-1 {
-  background-image: url('/src/assets/feature_bg_white_1.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-tech-2 {
-  background-image: url('/src/assets/feature_bg_white_2.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.footer-section {
-  background-image: url('/src/assets/mcp_bg_white.png');
-  background-size: cover;
-  background-position: center;
-}
-
-/* Overlays */
-.hero::before,
-.feature-section::before,
-.footer-section::before {
+.hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(1px);
 }
 
-/* Hero Content */
 .hero-content {
   position: relative;
   z-index: 1;
@@ -178,95 +269,99 @@
 }
 
 .title {
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  letter-spacing: -2px;
   background: linear-gradient(120deg, #333 30%, #5e7ce2 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
 }
 
 .subtitle {
-  font-size: 2.2rem;
-  margin-bottom: 3.5rem;
-  line-height: 1.5;
+  font-size: 2rem;
+  margin-bottom: 3rem;
   color: var(--text-secondary);
-  font-weight: 400;
+  line-height: 1.5;
 }
 
-.cta-group {
-  display: flex;
+/* Highlights Section */
+.highlights-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  justify-content: center;
+  margin-top: 50px;
 }
 
-.btn {
-  padding: 16px 48px;
-  border-radius: 30px;
+.highlight-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-color: rgba(94, 124, 226, 0.2);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.card-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.highlight-card h3 {
   font-size: 1.2rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.highlight-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Feature Sections */
+.feature-section {
+  padding: 120px 0;
   position: relative;
   overflow: hidden;
 }
 
-.btn.primary {
-  background: var(--primary-gradient);
-  color: white;
-  border: none;
-  box-shadow: 0 10px 25px rgba(94, 124, 226, 0.3);
+.bg-tech-1 {
+  background-image: url('/src/assets/feature_bg_white_1.png');
+  background-size: cover;
 }
 
-.btn.primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(94, 124, 226, 0.5);
+.bg-tech-2 {
+  background-image: url('/src/assets/feature_bg_white_2.png');
+  background-size: cover;
 }
 
-.btn.secondary {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  color: var(--primary-color);
-  border: 1px solid rgba(94, 124, 226, 0.3);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.btn.secondary:hover {
-  background: white;
-  transform: translateY(-3px);
-  border-color: var(--primary-color);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.scroll-indicator {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--text-secondary);
-  font-size: 2.5rem;
-  animation: bounce 2s infinite;
-  z-index: 2;
-  opacity: 0.6;
-}
-
-/* Feature Sections */
 .feature-content {
-  position: relative;
-  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
-  width: 100%;
-  padding: 0 80px;
-  height: 100%;
+  gap: 60px;
 }
 
 .reverse .feature-content {
@@ -275,81 +370,54 @@
 
 .feature-text {
   flex: 1;
-  color: var(--text-primary);
-  padding: 0 30px;
 }
 
-.section-title.light {
-  font-size: 3.2rem;
+.section-title {
+  font-size: 2.8rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: var(--text-primary);
-  text-shadow: none;
-  position: relative;
-  white-space: nowrap;
 }
 
-.section-title.light::after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 6px;
-  background: var(--primary-gradient);
-  margin-top: 20px;
-  border-radius: 3px;
+.text-center {
+  text-align: center;
 }
 
 .feature-desc {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.8;
   color: var(--text-secondary);
-  font-weight: 300;
 }
 
 .feature-visual {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .floating-img {
-  width: 90%;
+  width: 100%;
   max-width: 600px;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
-  animation: float 6s ease-in-out infinite;
-  transition: transform 0.5s ease;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 
 .floating-img:hover {
-  transform: scale(1.05);
-}
-
-.delay-1 { animation-delay: 1s; }
-.delay-2 { animation-delay: 2s; }
-.delay-3 { animation-delay: 3s; }
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-25px); }
-  100% { transform: translateY(0px); }
+  transform: scale(1.02);
 }
 
 /* Footer */
-.footer-content {
-  position: relative;
-  z-index: 2;
+.footer-section {
+  padding: 100px 0 40px;
+  background-image: url('/src/assets/mcp_bg_white.png');
+  background-size: cover;
   text-align: center;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
 .footer-content h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   background: var(--primary-gradient);
   -webkit-background-clip: text;
@@ -358,21 +426,14 @@
 }
 
 .footer-content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .footer-mini {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  backdrop-filter: blur(10px);
+  margin-top: 80px;
+  padding-top: 20px;
   border-top: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -381,42 +442,74 @@
   margin: 0;
 }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Buttons */
+.cta-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
-  40% { transform: translate(-50%, -10px); }
-  60% { transform: translate(-50%, -5px); }
+.btn {
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+.btn.primary {
+  background: var(--primary-gradient);
+  color: white;
+  box-shadow: 0 8px 20px rgba(94, 124, 226, 0.3);
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(94, 124, 226, 0.4);
+}
+
+.btn.secondary {
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid rgba(94, 124, 226, 0.3);
+}
+
+.btn.secondary:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .title { font-size: 3.5rem; }
+  .subtitle { font-size: 1.5rem; }
+  
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+  
   .feature-content {
     flex-direction: column;
     text-align: center;
-    padding: 0 30px;
-    justify-content: center;
+    padding: 0 20px;
   }
+  
   .reverse .feature-content {
     flex-direction: column;
   }
-  .feature-text {
-    padding: 0;
-    margin-bottom: 50px;
-  }
+  
   .feature-visual {
     width: 100%;
-  }
-  .section-title.light {
-    font-size: 3rem;
-  }
-  .section-title.light::after {
-    margin: 20px auto 0;
-  }
-  .title {
-    font-size: 3.5rem;
+    margin-top: 40px;
   }
 }
 </style>

@@ -66,7 +66,7 @@
           </p>
         </div>
         <div class="feature-visual">
-          <img src="/src/assets/tinyrobot_easy.png" alt="简单易用" class="floating-img delay-2" />
+          <img src="/src/assets/tinyrobot_easy_use.png" alt="简单易用" class="floating-img delay-2" />
         </div>
       </div>
     </section>
@@ -83,7 +83,7 @@
           </p>
         </div>
         <div class="feature-visual">
-          <img src="/src/assets/tinyrobot_tools.png" alt="工具演示" class="floating-img delay-3" />
+          <img src="/src/assets/tinyrobot_tools_demos.png" alt="工具演示" class="floating-img delay-3" />
         </div>
       </div>
     </section>
