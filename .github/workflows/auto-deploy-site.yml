@@ -63,7 +63,12 @@ jobs:
       - name: Build site
         run: pnpm run build # 执行构建命令，生成静态网站文件
 
-      # 步骤8: 上传构建产物
+      # 步骤8: 修复构建产物以支持 SPA 路由
+      - name: Repair build artifact for SPA routing
+        run: |
+          cp ./dist/index.html ./dist/404.html
+
+      # 步骤9: 上传构建产物
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
