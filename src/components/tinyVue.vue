@@ -372,6 +372,7 @@
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
   animation: float 6s ease-in-out infinite;
   transition: transform 0.5s ease;
+  border-radius: 24px; /* Add rounded corners */
 }
 
 .floating-img:hover {

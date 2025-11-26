@@ -399,7 +399,7 @@
   width: 100%;
   max-width: 600px;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
-  border-radius: 12px;
+  border-radius: 24px; /* Increased rounded corners */
   transition: transform 0.3s ease;
 }
 
