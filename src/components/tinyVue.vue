@@ -87,9 +87,9 @@
     <!-- MCP Section -->
     <section class="mcp-section section">
       <div class="mcp-content">
-        <h2 class="section-title light">TinyVue 4.0 智能化生成式 UI 组件库</h2>
+        <h2 class="section-title light">智能化生成式 UI </h2>
         <p class="mcp-desc">
-          全新升级的 TinyVue 4.0，引入 AI 智能化能力，让组件开发更智能、更高效
+          全新升级的 TinyVue，引入 AI 智能化能力，让组件开发更智能、更高效
         </p>
         <div class="feature-grid">
           <div class="feature-card">
