@@ -553,13 +553,22 @@
     width: 100%;
   }
 
+  .mcp-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+    overflow-y: visible;
+  }
+
   .mcp-content {
     padding: 0 20px;
+    height: auto;
   }
 
   .feature-grid {
     grid-template-columns: 1fr; /* Stack cards on mobile */
     gap: 20px;
+    margin-bottom: 40px;
   }
 
   .feature-card {
